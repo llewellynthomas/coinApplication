@@ -1,0 +1,3 @@
+calculator_coin:
+    path:  /
+    defaults: { _controller: CoinCalculatorBundle:Calculator:index }

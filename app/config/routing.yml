@@ -1,0 +1,3 @@
+app:
+    resource: "@CoinCalculatorBundle/Controller/"
+    type:     annotation

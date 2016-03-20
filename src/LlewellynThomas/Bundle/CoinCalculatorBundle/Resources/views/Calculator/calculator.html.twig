@@ -1,0 +1,65 @@
+{% extends 'CoinCalculatorBundle::common.html.twig' %}
+
+{% block body %}
+    <div class="content">
+
+        <div class="row">
+            <div class=".col-md-12">
+                <h1>{{ "calculator.heading"|trans }}</h1>
+                <p class="lead">{{ 'coin.description'|trans }}</p>
+            </div>
+        </div>
+        <div class="calcultor">
+                <div class=".col-md-6">
+                    {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
+
+                    <div class="form-group">
+                        {{ form_row(form.currency, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_row(form.amount, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_row(form.submit, {'attr': {'class': 'btn btn-primary'}}) }}
+                    </div>
+
+                </div>
+                {{ form_end(form) }}
+
+        </div>
+
+        <div class="results">
+
+            {% if coins|length > 0 %}
+                <hr/>
+
+                <h2>{{ 'coin.results'|trans }}</h2>
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>{{ 'coinType'|trans }}</th>
+                        <td>{{ 'coinsUsed'|trans }}</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                {% for coin, used in coins %}
+                        <tr>
+                            <td>
+                                {{ coin/100 }}
+                            </td>
+                            <td>
+                                {{ used }}
+                            </td>
+
+                        </tr>
+                {% endfor %}
+                    </tbody>
+
+
+                </table>
+            {% endif %}
+
+        </div>
+    </div>
+
+{% endblock %}

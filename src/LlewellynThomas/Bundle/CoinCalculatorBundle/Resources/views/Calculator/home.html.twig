@@ -1,0 +1,20 @@
+{% extends 'CoinCalculatorBundle::common.html.twig' %}
+
+{% block body %}
+    <div class="content">
+
+    <div class="row">
+        <div class=".col-md-12">
+            <h1>{{ "apps"|trans }}</h1>
+
+            <ul>
+                <li>
+                    <a href="{{ path('calculator_coin') }}">{{ 'calculator.heading'|trans }}</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    </div>
+{% endblock %}

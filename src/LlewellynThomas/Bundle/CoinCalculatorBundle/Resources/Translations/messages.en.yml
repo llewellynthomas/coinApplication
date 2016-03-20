@@ -1,0 +1,16 @@
+calculator.heading: Coin Calculator
+apps: Applications:
+coin.description: Calculate the fewest coins it will take to make the amount you entered
+
+#coins
+coin.USD: US Dollar
+coin.GBP: British Pound
+
+
+#form
+coin.submit: Calculate
+
+coinType: Coin
+coinsUsed: Coins used
+
+coin.results: Results

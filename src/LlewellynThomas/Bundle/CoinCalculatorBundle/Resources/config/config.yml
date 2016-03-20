@@ -1,0 +1,6 @@
+coin_calculator:
+  currencies:
+    GBP:
+      coins: [200, 100, 50, 20, 10, 5, 2, 1]
+    USD:
+      coins: [100, 50, 25, 10, 5, 1]
