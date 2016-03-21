@@ -1,5 +1,7 @@
 {% extends 'CoinCalculatorBundle::common.html.twig' %}
 
+{% block title %}{{ 'calculator.heading'|trans }}{% endblock %}
+
 {% block body %}
     <div class="content">
 
@@ -9,7 +11,7 @@
                 <p class="lead">{{ 'coin.description'|trans }}</p>
             </div>
         </div>
-        <div class="calcultor">
+        <div class="calculator">
                 <div class=".col-md-6">
                     {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
 
@@ -33,7 +35,7 @@
             {% if coins|length > 0 %}
                 <hr/>
 
-                <h2>{{ 'coin.results'|trans }}</h2>
+                <h3>{{ 'coin.results'|trans }}</h3>
                 <table class="table table-striped">
                     <thead>
                     <tr>

@@ -1,5 +1,5 @@
 calculator.heading: Coin Calculator
-apps: Applications:
+apps: Applications
 coin.description: Calculate the fewest coins it will take to make the amount you entered
 
 #coins
@@ -13,4 +13,4 @@ coin.submit: Calculate
 coinType: Coin
 coinsUsed: Coins used
 
-coin.results: Results
+coin.results: Minium coins used to calculate amount
